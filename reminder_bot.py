@@ -70,7 +70,7 @@ def main():
             await _notify()
 
     bot.loop.create_task(notify())
-    bot.run(settings.DISCORD_TOKEN)
+    client.run(os.environ['token'])
 
 
 if __name__ == "__main__":
